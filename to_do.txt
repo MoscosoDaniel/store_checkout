@@ -1,5 +1,5 @@
 x Can create an instance of the "Checkout class".
-- Can add item price.
+x Can add item price.
 - Can add an item.
 - Can aclculate the current total.
 - Can add multiple itmes and get correct total.
