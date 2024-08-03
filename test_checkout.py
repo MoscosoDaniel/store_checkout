@@ -23,3 +23,11 @@ def test_get_correct_total_with_multiple_items(checkout_single_instance):
 
 def test_can_add_discount_rule(checkout_single_instance):
     checkout_single_instance.add_discount("a", 3, 2)
+
+
+def test_can_apply_discount_rule(checkout_single_instance):
+    checkout_single_instance.add_discount("a", 3, 2)
+    checkout_single_instance.add_item("a")
+    checkout_single_instance.add_item("a")
+    checkout_single_instance.add_item("a")
+    assert checkout_single_instance.calculate_total() == 2
