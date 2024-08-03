@@ -11,3 +11,6 @@ class Checkout:
 
     def calculate_total(self) -> int:
         return self.total
+
+    def add_discount(self, item: str, num_of_items: int, price: float):
+        pass
