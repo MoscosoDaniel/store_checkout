@@ -4,5 +4,5 @@ x Can add an item.
 x Can aclculate the current total.
 x Can add multiple itmes and get correct total.
 x Can add discount rules.
-- Can apply discoount rules.
+x Can apply discoount rules.
 - Exception thrown for item added without a price.
