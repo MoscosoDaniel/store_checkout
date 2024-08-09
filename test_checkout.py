@@ -31,3 +31,8 @@ def test_can_apply_discount_rule(checkout_single_instance):
     checkout_single_instance.add_item("a")
     checkout_single_instance.add_item("a")
     assert checkout_single_instance.calculate_total() == 2
+
+
+def test_exception_bad_item(checkout_single_instance):
+    with pytest.raises(Exception):
+        checkout_single_instance.add_item("C")
