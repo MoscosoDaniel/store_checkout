@@ -24,6 +24,9 @@ class Checkout:
         self.prices[item] = price
 
     def add_item(self, item: str) -> None:
+        if item not in self.prices:
+            raise Exception("Bad item")
+
         if item in self.items_dict:
             self.items_dict[item] += 1
         else:
